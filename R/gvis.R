@@ -177,7 +177,7 @@ function displayChart%s() {
 while (callbacks.length > 0)
 callbacks.shift()();
 } %s});
-}, 200);
+}, 500);
 }
 '
   jsDisplayChart <- sprintf(jsDisplayChart,
