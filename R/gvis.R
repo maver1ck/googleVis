@@ -239,13 +239,13 @@ var options = {};
                       ifelse(!(is.null(options$gvis$height) || (options$gvis$height == "")),options$gvis$height, "automatic")
   )
   
-  output <- list(chart=list(jsHeader=jsHeader,
+  output <- list(chart=list(divChart=divChart,
+                            jsHeader=jsHeader,
                             jsData=jsData,
                             jsDrawChart=jsDrawChart,
                             jsDisplayChart=jsDisplayChart,
                             jsFooter=jsFooter,
-                            jsChart=jsChart,
-                            divChart=divChart),
+                            jsChart=jsChart),
                  type=type, chartid=chartid)
   return(output)
 }
