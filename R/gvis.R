@@ -177,7 +177,7 @@ function displayChart%s() {
 while (callbacks.length > 0)
 callbacks.shift()();
 } %s});
-}, 500);
+}, 100);
 }
 '
   jsDisplayChart <- sprintf(jsDisplayChart,
@@ -222,7 +222,7 @@ var options = {};
 <script type="text/javascript">
 setTimeout(function() {
     displayChart%s();
-}, 2000);
+}, 1000);
 </script>
 '
   jsChart  <- sprintf(jsChart, chartid, chartid)
