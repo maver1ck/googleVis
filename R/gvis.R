@@ -220,9 +220,9 @@ var options = {};
 <!-- jsChart -->  
 <script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChart%s"></script>
 <script type="text/javascript">
-$( document ).ready(function() {
+setTimeout(function() {
     displayChart%s();
-});
+}, 2000);
 </script>
 '
   jsChart  <- sprintf(jsChart, chartid, chartid)
