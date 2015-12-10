@@ -218,9 +218,10 @@ var options = {};
   
   jsChart <- '
 <!-- jsChart -->  
-<script type="text/javascript\" src="https://www.google.com/jsapi?callback=displayChart%s"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChart%s"></script>
+<script type="text/javascript">displayChart%s();</script>
 '
-  jsChart  <- sprintf(jsChart, chartid)
+  jsChart  <- sprintf(jsChart, chartid, chartid)
   
   
   divChart <- '
