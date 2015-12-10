@@ -222,7 +222,7 @@ var options = {};
 <script type="text/javascript">
 setTimeout(function() {
     displayChart%s();
-}, 2000);
+}, 1000);
 </script>
 '
   jsChart  <- sprintf(jsChart, chartid, chartid)
